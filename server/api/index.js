@@ -1,11 +1,16 @@
 import express from "express"
 import { Server } from 'socket.io'
+import cors from 'cors'
 
 process.loadEnvFile()
 
 const app = express()
 
-app.get
+app.use(cors({ origin: '*' }))
+
+app.get('/', (req, res) => {
+    res.send('Map API wishes you good day')
+})
 
 const port = process.env.PORT
 const server = app.listen(port, () => {
