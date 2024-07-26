@@ -51,7 +51,7 @@ export default function Location() {
     setInterval(async () => {
       const location = await getLocation()
       socket.emit('share-location', { ...location, user: socket.id })
-    }, 5000)
+    }, 3000)
   }
 
 
