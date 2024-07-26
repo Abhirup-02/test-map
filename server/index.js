@@ -29,7 +29,7 @@ io.on('connection', (socket) => {
 
     // user should join a room in our case i think the room should be walletID
     socket.on('share-location', (location) => {
-        console.log(location);
+        // console.log(location);
 
         socket.broadcast.emit('share-location', location)
     })

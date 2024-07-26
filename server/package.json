@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node api/index",
-    "dev": "node --watch api/index"
+    "start": "node index",
+    "dev": "node --watch index"
   },
   "keywords": [],
   "author": "",
