@@ -57,7 +57,7 @@ export default function Location() {
 
   return (
     <div>
-      <p>Status: {isConnected ? "connected" : "disconnected"}</p>
+      <p>Status: {isConnected ? "Connected" : "Disconnected"}</p>
       <p>Transport: {transport}</p>
       <button onClick={shareLocation}>Share Location</button>
     </div>
