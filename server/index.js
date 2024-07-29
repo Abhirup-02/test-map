@@ -19,6 +19,7 @@ app.get('/', (req, res) => res.json('Map API wishes you good day'))
 
 const io = new Server(httpServer, {
     cors: process.env.FRONTEND_URL,
+    allowedHeaders: ['Access-Control-Allow-Origin'],
     pingTimeout: 60000
 })
 
